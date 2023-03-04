@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div.Menulvl1 { 
+            margin: 10px;
+        }
+        div.Menulvl1 > div:hover { 
+            background-color: gray;
+            color: lightgray;
+            
+        }
+        div.Menulvl1 > div { 
+            width: 100px;
+            background-color: lightgray; 
+            border: solid black 1px;
+            color: gray;
+            cursor: pointer ;
+            border-radius: 5px;
+            float: left;
+            width: 100px;
+            position: relative; 
+        }
+        div.Menulvl1 > div:hover div.Menulvl2 { 
+            top: 105%; 
+            z-index: 1;
+            height: 60px;
+            display: block; 
+            position: absolute; 
+            left: -1%; 
+        }
+        div.Menulvl2 { 
+            width: 100px;
+            height: 0;
+            overflow: hidden;
+        }
+        div.Menulvl2 > div { 
+            background-color: lightgray; 
+            border: solid black 1px;
+            color: gray; 
+            cursor: pointer;
+            border-radius: 5px; 
+            
+        }
+        div.Menulvl2 > div:hover { 
+            background-color: gray;
+            color: lightgray;
+        }
+        
+        @media all and (max-width: 720px){
+                div.Menulvl1 { 
+                width: 100px;
+            }
+            div.Menulvl1 > div { 
+                background-color: lightgray; 
+                border: solid black 1px;
+                color: gray;
+                position: relative; 
+                cursor: pointer ;
+                border-radius: 5px;
+            }
+            div.Menulvl1 > div:hover div.Menulvl2 { 
+                display: block; 
+                position: absolute; 
+                left: 101%; 
+                top: 0%; 
+                z-index: 1;
+                transition: 1s;
+                height: 60px;
+            }
+            div.Menulvl2 { 
+                width: 100px; 
+                height: 0px;
+                overflow: hidden;
+            }
+            div.Menulvl2 > div { 
+                background-color: lightgray; 
+                border: solid black 1px; 
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+    <body>
+        <div class='Menulvl1'>
+            <div><h4>Понедельник</h4>
+                <div class='Menulvl2'>
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div><h4>Вторник</h4>
+                <div class='Menulvl2'>
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div><h4>Среда</h4>
+                <div class='Menulvl2'>
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div><h4>Четверг</h4>
+                <div class='Menulvl2'>
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div><h4>Пятница</h4>
+                <div class='Menulvl2'>
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div><h4>Суббота</h4>
+                <div class='Menulvl2'>
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div><h4>Воскресенье</h4>
+                <div class='Menulvl2'>
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
