@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p{
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            background-color: lightgray;
+            margin: 0px;
+        }
+        .left{
+            background-color: lightyellow;
+            width: 15em;
+            height: auto;
+            padding: 20px 0px 0px 0px;
+            float: left;
+        }
+
+        .st{
+            float: right;
+            width:760px;
+            height: auto;
+        }
+
+        .right{
+            background-color: #ababab;
+            width: auto;
+            height: auto;
+            padding: 20px 0px 0px 0px;
+            margin-left:15em;
+            margin-bottom: 1em;
+        }
+
+        ul{
+            font-size: larger;
+            font-weight: 5000;
+            font-style: initial;
+        }
+
+        .bottom{
+            background-color: lightslategray;
+            clear:both;
+            margin: 0px;
+        }
+
+        .img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h3>Блок навигации</h3>
+
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Распологается слева</li>
+                <li>блок навигации наполняется контентом достаточным чтобы по высоте он начинал захватывать вторую статью</li>
+            </ul>
+        </div>
+        
+        <div class="right">
+            <h3>Статья 1</h3>
+
+            <p>Размер блока:<br>Занимает всю доступную ширину<br>Должен присутствовать цвет фона<br>Во всех сатьях сделайте отступ снизу от соседей равным 1tm, при помощи сойства<br>margin-bottom</p>
+        </div>
+        <div class="right ">
+            <h3>Статья 2</h3>
+        
+            <p>Размер блока:<br>анимает всю доступную ширину<br>Должен присутствовать цвет фона<br>Во всех сатьях сделайте отступ снизу от соседей равным 1tm, при помощи сойства<br>margin-bottom</p>
+                
+            <div class="img"><img src="i.png"></div>
+            <br style="clear:both">
+        </div>
+    </div>
+    
+    <div class="bottom"><p>Нижний блок,подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</p></div>
+</body>
+</html>

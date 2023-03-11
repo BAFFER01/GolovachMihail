@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .custom-table{
+            border-collapse: collapse;
+        }
+        .custom-table-header{
+            background-color: grey;
+            border-width: 0px;
+            
+        }
+        .custom-table-header th{
+            border-style: solid;
+            border-color: white;
+            padding: 5px;
+        }
+        .custom-table-row:nth-child(2n+1){
+            background-color: lightgray;
+            margin:0;
+            
+        }
+        .custom-table-row{
+            border-color: gray;
+            border-style:dotted;
+            border-left-style: none;
+            border-right-style: none;
+            border-width: 2px;
+            
+        }
+        .custom-table-row td{
+            border-color: inherit;
+            border-style:dotted;
+            border-right-style: none;
+            border-width: 1px;
+        }
+        .custom-table-row:hover{
+            background-color: wheat;
+        }
+        .info{
+            color:grey;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table class="custom-table">
+        <tr class="custom-table-header">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr class="custom-table-row">
+            <th>Иванов Иван Иванович</th>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr class="custom-table-row">
+            <th><div>Петрова Илонна Петровна</div></th>
+            <td><div>Ж</div></td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr class="custom-table-row">
+            <th>Сидоров Илья Игоревич</th>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr class="custom-table-row">
+            <th>Пупин Федор Федорович</th>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>1811899</td>
+            <td>48151889</td>
+        </tr>
+        <tr class="custom-table-row">
+            <th>Крупин Сергей Иванович</th>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>183899</td>
+            <td>98919</td>
+        </tr>
+        <tr class="info">
+            <td><h2>Данные о сотрудниках</h2></td>
+        </tr>
+    </table>
+</body>
+</html>
